@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verifikasi OTP</title>
+</head>
+<body>
+    <h2>Masukkan Kode OTP</h2>
+    <form action="/verify/{{ phone_number }}" method="POST">
+        <label for="otp_code">Kode OTP:</label>
+        <input type="text" id="otp_code" name="otp_code" required><br><br>
+        <input type="submit" value="Verifikasi">
+    </form>
+</body>
+</html>
